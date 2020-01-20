@@ -32,7 +32,7 @@ module.exports = {
     },
     {
       name: 'Projects',
-      url: '/#projects',
+      url: '/#featured',
     },
     {
       name: 'Contact',
