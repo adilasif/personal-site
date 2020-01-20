@@ -1,10 +1,21 @@
 const theme = {
   colors: {
-    darkBackground: '#1C1C28',
-    background: '#28293D',
+    darkBackground: '#090909',
+    background: '#1C1C28',
+    lightBackground: '#28293D',
+    lightestBackground: '#2C2E45',
     primary: '#FF6600',
     primaryTransparent: 'rgba(255, 102, 0, 0.07)',
+    secondary: '#FF8B3D',
     grey: '#545770',
+    slate: '#8F90A5',
+    darkSlate: '#868095',
+    lightSlate: '#a8b2d1',
+    darkNavy: '#020c1b',
+    offWhite: '#dce7ff',
+    white: '#e6f1ff',
+    highlight: 'rgba(41, 61, 90, 0.99)',
+    shadowNavy: 'rgba(2, 12, 27, 0.7)',
   },
 
   fonts: {
