@@ -3,10 +3,16 @@ import { StaticQuery, graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import { Head, Loader } from '@components';
+import { Head, Loader, Nav, Social, Email, Footer } from '@components';
 import { GlobalStyle, theme } from '@styled-components';
 
 const { colors, fontSizes, fonts } = theme;
+
+// https://medium.com/@chrisfitkin/how-to-smooth-scroll-links-in-gatsby-3dc445299558
+if (typeof window !== 'undefined') {
+  // eslint-disable-next-line global-require
+  require('smooth-scroll')('a[href*="#"]');
+}
 
 const SkipToContent = styled.a`
   position: absolute;
@@ -41,7 +47,14 @@ const SkipToContent = styled.a`
   }
 `;
 
-const Layout = ({ location }) => {
+const StyledContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* background-color: ${colors.background}; */
+`;
+
+const Layout = ({ children, location }) => {
   const [isLoading, setIsLoading] = useState(location.pathname === '/');
 
   useEffect(() => {
@@ -82,7 +95,15 @@ const Layout = ({ location }) => {
 
           {isLoading ? (
             <Loader finishLoading={() => setIsLoading(false)} />
-          ) : null}
+          ) : (
+            <StyledContent id="content">
+              <Nav location={location} />
+              <Social />
+              <Email />
+              {children}
+              <Footer />
+            </StyledContent>
+          )}
         </div>
       )}
     />
