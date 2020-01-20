@@ -12,7 +12,7 @@ const { colors } = theme;
 
 const StyledContainer = styled.div`
   ${mixins.flexCenter};
-  background-color: ${colors.darkBackground};
+  background-color: ${colors.background};
   position: fixed;
   width: 100%;
   height: 100%;
