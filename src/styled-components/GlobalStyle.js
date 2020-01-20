@@ -235,7 +235,6 @@ const GlobalStyle = createGlobalStyle`
       color: ${colors.primary};
       outline: 0;
     }
-
   }
 
   button {
@@ -246,7 +245,6 @@ const GlobalStyle = createGlobalStyle`
     &:active {
       outline-color: ${colors.blue};
     }
-
   }
 
   input, textarea {
@@ -264,9 +262,7 @@ const GlobalStyle = createGlobalStyle`
       &::placeholder {
         opacity: 0.5;
       }
-
     }
-
   }
 
   p {
