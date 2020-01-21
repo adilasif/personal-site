@@ -5,4 +5,4 @@ subtitle: 'I build things for humans.'
 contactText: 'Get In Touch'
 ---
 
-I'm a back-end engineer specializing in hand-crafted solutions for real world challenges.
+I'm a software engineer specializing in hand-crafted solutions to real world challenges.
