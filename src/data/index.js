@@ -1,7 +1,7 @@
 module.exports = {
   siteTitle: 'Adil Asif | Software Engineer',
   siteDescription:
-    'Adil Asif is a software engineer specializing in hand-crafted solutions for real world challenges.',
+    'Adil Asif is a software engineer specializing in hand-crafted solutions to real world challenges.',
   siteKeywords:
     'Adil Asif, Adil, Asif, adilasif, software engineer, software developer, front-end engineer, back-end engineer, full-stack engineer, frontend engineer, backend engineer, fullstack engineer, front-end developer, back-end developer, full-stack developer, frontend developer, backend developer, fullstack developer, web developer, software, engineer, developer, javascript, north carolina, south, east, east coast',
   siteUrl: 'https://adilasif.com',
