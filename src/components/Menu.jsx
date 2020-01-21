@@ -107,13 +107,13 @@ const Menu = ({ menuOpen, toggleMenu }) => {
                 </NavListItem>
               ))}
           </NavList>
-          <ResumeLink
+          {/* <ResumeLink
             href="/adilasif-resume-0120.pdf"
             target="_blank"
             rel="nofollow noopener noreferrer"
           >
             Resume
-          </ResumeLink>
+          </ResumeLink> */}
         </NavLinks>
       </Sidebar>
     </StyledContainer>
