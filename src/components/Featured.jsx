@@ -128,7 +128,7 @@ const StyledFeaturedImg = styled(Img)`
   `};
 `;
 
-const StyledImgContainer = styled.div`
+const StyledImgContainer = styled.a`
   ${mixins.boxShadow};
   grid-column: 6 / -1;
   grid-row: 1 / -1;
@@ -292,7 +292,7 @@ const Featured = ({ data }) => {
                 </StyledContent>
 
                 <StyledImgContainer
-                  // href={external || github || '#projects'}
+                  href={external || github || null}
                   target="_blank"
                   rel="nofollow noopener noreferrer"
                 >
