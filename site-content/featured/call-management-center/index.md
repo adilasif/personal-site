@@ -5,9 +5,9 @@ cover: './iha-cmc.png'
 tech:
   - Vue.js
   - Express
+  - Jest
   - Node.js
   - MS SQL Server
-  - Redis
 show: 'true'
 ---
 
