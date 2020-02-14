@@ -33,7 +33,7 @@ const StyledContainer = styled.header`
       : 'none'};
   transform: translateY(
     ${props =>
-      props.scrollDirection === 'down' ? `-${theme.navScrollHeight}` : '0px'}
+    props.scrollDirection === 'down' ? `-${theme.navScrollHeight}` : '0px'}
   );
   ${media.desktop`padding: 0 40px;`};
   ${media.tablet`padding: 0 25px;`};
@@ -109,7 +109,7 @@ const StyledHamburgerInner = styled.div`
   transform: rotate(${props => (props.menuOpen ? `225deg` : `0deg`)});
   transition-timing-function: cubic-bezier(
     ${props =>
-      props.menuOpen ? `0.215, 0.61, 0.355, 1` : `0.55, 0.055, 0.675, 0.19`}
+    props.menuOpen ? `0.215, 0.61, 0.355, 1` : `0.55, 0.055, 0.675, 0.19`}
   );
   &:before,
   &:after {
@@ -131,14 +131,14 @@ const StyledHamburgerInner = styled.div`
     top: ${props => (props.menuOpen ? `0` : `-10px`)};
     opacity: ${props => (props.menuOpen ? 0 : 1)};
     transition: ${props =>
-      props.menuOpen ? theme.hamBeforeActive : theme.hamBefore};
+    props.menuOpen ? theme.hamBeforeActive : theme.hamBefore};
   }
   &:after {
     width: ${props => (props.menuOpen ? `100%` : `80%`)};
     bottom: ${props => (props.menuOpen ? `0` : `-10px`)};
     transform: rotate(${props => (props.menuOpen ? `-90deg` : `0`)});
     transition: ${props =>
-      props.menuOpen ? theme.hamAfterActive : theme.hamAfter};
+    props.menuOpen ? theme.hamAfterActive : theme.hamAfter};
   }
 `;
 
@@ -268,10 +268,10 @@ class Nav extends Component {
                       <Logo />
                     </a>
                   ) : (
-                    <Link to="/" aria-label="home">
-                      <Logo />
-                    </Link>
-                  )}
+                      <Link to="/" aria-label="home">
+                        <Logo />
+                      </Link>
+                    )}
                 </StyledLogo>
               </CSSTransition>
             )}
@@ -312,7 +312,7 @@ class Nav extends Component {
                 <CSSTransition classNames="fadedown" timeout={3000}>
                   <div style={{ transitionDelay: `600ms` }}>
                     <StyledResumeButton
-                      href="/adilasif-resume-0120.pdf"
+                      href="/adilasif-resume-0220.pdf"
                       target="_blank"
                       rel="nofollow noopener noreferrer"
                     >

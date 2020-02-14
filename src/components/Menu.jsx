@@ -108,7 +108,7 @@ const Menu = ({ menuOpen, toggleMenu }) => {
               ))}
           </NavList>
           <ResumeLink
-            href="/adilasif-resume-0120.pdf"
+            href="/adilasif-resume-0220.pdf"
             target="_blank"
             rel="nofollow noopener noreferrer"
           >
