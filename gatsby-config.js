@@ -25,6 +25,13 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-plugin-ackee-tracker',
+      domainID: '578e957b-0ce7-458e-8b0f-ab099b75258b',
+      server: 'https://adilasif-ackee.herokuapp.com/',
+      ignoreLocalHost: true,
+      detailed: false,
+    },
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'site-content',
@@ -35,13 +42,6 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
-          {
-            resolve: 'gatsby-plugin-ackee-tracker',
-            domainID: '578e957b-0ce7-458e-8b0f-ab099b75258b',
-            server: 'https://adilasif-ackee.herokuapp.com/',
-            ignoreLocalHost: true,
-            detailed: false,
-          },
           {
             resolve: 'gatsby-remark-external-links',
             options: {
