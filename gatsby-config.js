@@ -26,10 +26,12 @@ module.exports = {
     },
     {
       resolve: 'gatsby-plugin-ackee-tracker',
-      domainID: '578e957b-0ce7-458e-8b0f-ab099b75258b',
-      server: 'https://adilasif-ackee.herokuapp.com/',
-      ignoreLocalHost: false,
-      detailed: true,
+      options: {
+        domainId: '578e957b-0ce7-458e-8b0f-ab099b75258b',
+        server: 'https://adilasif-ackee.herokuapp.com',
+        ignoreLocalhost: true,
+        detailed: false,
+      },
     },
     {
       resolve: 'gatsby-source-filesystem',
